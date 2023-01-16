@@ -2,7 +2,7 @@
 // значения b1, k1, b2 и k2 задаются пользователем.
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
-double GetNumberByUser(string n)   
+double GetNumberByUser(string n)
 {
     Console.Write(n);
     return Convert.ToInt32(Console.ReadLine());
@@ -21,7 +21,7 @@ void GetCoord(double k1, double b1, double k2, double b2)
     else
     {
         double x = (b2 - b1) / (k1 - k2);
-        double y = y = k1 * x + b1;
+        double y = k1 * x + b1;
         System.Console.WriteLine($"Координаты перечесения двух прямых: (x: {x} , y: {y})");
     }
 }
