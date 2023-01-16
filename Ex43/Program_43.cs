@@ -21,7 +21,7 @@ void GetCoord(double k1, double b1, double k2, double b2)
     else
     {
         double x = (b2 - b1) / (k1 - k2);
-        double y = k1 * (b2 - b1) / (k1 - k2) + b1;
+        double y = y = k1 * x + b1;
         System.Console.WriteLine($"Координаты перечесения двух прямых: (x: {x} , y: {y})");
     }
 }
